@@ -1,2 +1,10 @@
 # VOI_IPmodels
-VOI Analysis for Invasion Percolation Models
+VOI Analysis for Invasion Percolation Models in a CO2 Injection Project
+
+Long-term geological storage of CO$_2$ in subsurface formations necessitates understanding the potential for migration and leakage. To assess these risks and to help optimize monitoring systems, we develop a framework for assessing migration probability in a multi-layer stratigraphic system using invasion-percolation concepts. For each layer, we estimate the height of the CO$_2$ column and the associated pressure, assuming the capillary threshold pressure as the limiting factor. When the capillary threshold pressure is exceeded, migration to the next layer occurs, and so on to the subsequent layers of the stratigraphic system. By modelling the heights in different layers explicitly, we facilitate the linkage to monitoring, assuming that seismic data can be used to estimate the heights of the CO$_2$ columns that build up in various layers over time. We conduct Value of Information (VOI) analyses to understand when it is optimal to gather seismic data to monitor the CO$_2$ plume. The VOI analyses reveal strong links between the migration times and valuable times for monitoring. In general, the VOI seems to be high at intermediate times, when the CO$_2$ has migrated to the immediate overlying layers. There is less value in monitoring at very early times, when the CO$_2$ is contained in the lower layers. We demonstrate this VOI framework using a case study inspired by the Sleipner CO$_2$ storage project, where we gain insight in monitoring questions using an invasion-percolation model for continuous shales and one with vertical feeders which locally by-pass stratigraphic sealing units enabling vertical migration.
+
+The Matlab files in this repository:
+- simulate invasion percolation processes in a sequence of stratigraphic layers.
+- computes values associated with migration from the formation, tax of stoping injection
+- simulate seismic height column data in layers
+- conducts VOI analysis by simulation regression (regressing the expected values on the data samples to approximate conditional means).
